@@ -18,7 +18,7 @@ if(!firebase.apps.length) {
 }
 
 
-export const createUserProfileDocument = async (userAuth, ...otherData) => {
+export const createUserProfileDocument = async (userAuth, otherData) => {
     console.log('inside create user profile', userAuth);
     if(!userAuth) return;
 
